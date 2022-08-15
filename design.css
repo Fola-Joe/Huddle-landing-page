@@ -62,18 +62,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 40vh;
 }
 .container {
     max-width: 300px;
 }
+.img-logo {
+    margin-top: 2rem;
+}
 .img-logo > img {
     width: 42%;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 }
 .img-mockups > img {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .write-up {
     text-align: center;
@@ -90,13 +93,103 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.4;
     color: white;
     margin-bottom: 2rem;
 }
 .btn {
+    font-family: 'Poppins', sans-serif;
     width: 70%;
-    padding: 1rem;
+    padding: 0.8rem;
     border: none;
     border-radius: 2rem;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 10px 10x 5px hsl(257, 33%, 19%);
+}
+.icons {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.icons > i  {
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    color: white;
+    border: 1px solid white;
+    font-size: 0.9rem;
+}
+#fb {
+    border-radius: 50%;
+    padding: 6px 8px;
+}
+#tweet {
+    padding: 6px;
+    border-radius: 50%;
+}
+#ig {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }    
+}
+
+@media screen and (min-width: 960px) {
+   /* body {
+    min-height: 90vh;
+   } */
+    .container {
+        width: 90%;
+        max-width: 1250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .img-logo {
+        margin-top: 1.5rem;
+    }
+    .img-logo > img {
+        width: 35%;
+        margin-bottom: 5rem;
+    }
+    .write-up {
+        text-align: left;
+        padding: 4rem;
+        margin-top: 30%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.08rem;
+    }
+    .btn {
+        width: 40%;
+        font-size: 1.08rem;
+    }
+    .icons {
+        display: flex;
+        justify-content: flex-end;
+        margin: 8rem 0 0 0;
+    }
+    .icons > i {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    #fb {
+        border-radius: 50%;
+        padding: 0.7rem 0.95rem;
+    }
+    #tweet {
+        padding: 0.7rem;
+        border-radius: 50%;
+    }
+    #ig {
+        padding: 0.7rem 0.8rem;
+        border-radius: 50%;
+    }
 }
