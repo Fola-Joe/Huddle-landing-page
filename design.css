@@ -104,6 +104,8 @@ p {
     border: none;
     border-radius: 2rem;
     color: hsl(257, 40%, 49%);
+    box-shadow: 2px 4px 5px 3px hsl(258, 44%, 29%);
+    transition: ease-in 0.2s;
 }
 .btn:hover {
     cursor: pointer;
@@ -121,6 +123,7 @@ p {
     color: white;
     border: 1px solid white;
     font-size: 0.9rem;
+    transition: ease-in 0.2s;
 }
 .icons > i:hover {
     cursor: pointer;
@@ -143,12 +146,13 @@ p {
 @media screen and (min-width: 376px) {
     body {
         background-image: url(images/bg-desktop.svg);
+        background-size: cover;
     }    
 }
 
 @media screen and (min-width: 1100px) {
    body {
-    min-height: 10vh;
+    min-height: 100vh;
    }
     .container {
         width: 90%;
